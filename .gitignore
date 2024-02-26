@@ -15,3 +15,5 @@
 # vendor/
 staci
 release/**
+go.mod
+go.sum

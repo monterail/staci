@@ -88,6 +88,10 @@ func main() {
 		if strings.HasSuffix(strings.ToLower(path), ".css") {
 			contentType = "text/css"
 		}
+		// hack for css
+		if strings.HasSuffix(strings.ToLower(path), ".js") {
+			contentType = "application/javascript"
+		}
 
 		file.Seek(0, 0)
 
